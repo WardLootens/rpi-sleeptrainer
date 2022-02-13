@@ -9,6 +9,13 @@
     LOW_LIGHT   Either 'True' or 'False'. Defaults to 'True'.
 ````
 
+## Schedule with crontab
+````
+45 6 * * * ~/Code/rpi-sleeptrainer/sleeptrainer.py orange
+0  7 * * * ~/Code/rpi-sleeptrainer/sleeptrainer.py green
+15 7 * * * ~/Code/rpi-sleeptrainer/sleeptrainer.py black
+````
+
 ## Disable status leds
 ````
 # led0 = status indicator, led1 = power indicator
