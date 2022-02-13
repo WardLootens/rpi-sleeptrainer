@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>SleepTrainer</title>
+        <link rel="stylesheet" href="static/style.css"/>
+    </head>
+    <body>
+{% if currentColor %}
+<div class="status" style="background-color: rgb({{currentColor[0] ~ ", " ~ currentColor[1] ~ ", " ~ currentColor[2] }})">
+        &nbsp;
+    </div>
+{% endif %}
+<form method="post" action="setLedColor">
+    <input type="submit" name="color" class="colorButton" value="green"/>
+    <input type="submit" name="color" class="colorButton" value="orange"/>
+    <input type="submit" name="color" class="colorButton" value="black"/>
+</form>
+    </body>
+</html>
