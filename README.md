@@ -1,6 +1,20 @@
 # rpi-sleeptrainer
 
-## Usage
+## Web UI
+### Start via
+````
+cd web
+./run.sh
+````
+
+### Access via
+````
+http://<ip>:5000/index.html
+````
+
+## Standalone script
+
+### Usage
 ````
 ./sleeptrainer.sh [COLOR [LOW_LIGHT] ]
     COLOR       Either 'black', 'grey', 'red', 'orange', 'yellow',
@@ -9,7 +23,7 @@
     LOW_LIGHT   Either 'True' or 'False'. Defaults to 'True'.
 ````
 
-## Schedule with crontab
+### Schedule with crontab
 ````
 45 6 * * * ~/Code/rpi-sleeptrainer/sleeptrainer.py orange
 0  7 * * * ~/Code/rpi-sleeptrainer/sleeptrainer.py green
