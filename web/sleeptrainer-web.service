@@ -1,0 +1,11 @@
+[Unit]
+Description=Sleeptrainer WEB service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /home/pi/Code/rpi-sleeptrainer/web/run.sh
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
