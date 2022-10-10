@@ -12,6 +12,14 @@ cd web
 http://<ip>:5000/index.html
 ````
 
+### Install as service
+sudo cp web/sleeptrainer-web.service /lib/systemd/system
+sudo chmod 644 /lib/systemd/system/sleeptrainer-web.service
+sudo systemctl daemon-reload
+sudo systemctl enable sleeptrainer-web.service
+sudo systemctl start sleeptrainer-web.service
+sudo systemctl status sleeptrainer-web.service
+
 ## Standalone script
 
 ### Usage
