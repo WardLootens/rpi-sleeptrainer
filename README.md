@@ -16,7 +16,7 @@ http://<ip>:5000/index.html
 
 ### Usage
 ````
-./sleeptrainer.sh [COLOR [LOW_LIGHT] ]
+./sleeptrainer.py [COLOR [LOW_LIGHT] ]
     COLOR       Either 'black', 'grey', 'red', 'orange', 'yellow',
                 'green', 'blue' or 'white'.
                 Defaults to 'white'.
