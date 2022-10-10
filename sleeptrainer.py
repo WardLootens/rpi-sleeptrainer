@@ -21,7 +21,7 @@ low_light = (sys.argv[2] == 'True') if len(sys.argv) > 2 else True
 color = colors[color_name] if color_name in colors else colors['black']
 k = colors['black']
 
-print 'Setting color to: ', color_name, '(',  color, '), low_light = ', low_light
+print ('Setting color to: ', color_name, '(',  color, '), low_light = ', low_light)
 
 sense = SenseHat()
 sense.low_light = low_light
