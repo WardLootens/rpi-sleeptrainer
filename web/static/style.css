@@ -31,3 +31,8 @@ body {
 .colorButton[value=black] {
     background-color: rgb(0, 0, 0);
 }
+.timestamp{
+    font-size: 0.8em;
+    text-align: center;
+} 
+

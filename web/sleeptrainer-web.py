@@ -2,6 +2,8 @@
 
 import sys
 
+from datetime import datetime
+
 from flask import Flask
 from flask import redirect, render_template, request, url_for
 from sense_hat import SenseHat
@@ -38,7 +40,7 @@ sense = SenseHat()
 @app.route("/index.html")
 def index():
     currentColor = sense.get_pixel(4, 4)
-    return render_template('index.html', currentColor=currentColor)
+    return render_template('index.html', currentColor=currentColor, now=datetime.now())
 
 @app.route("/setLedColor", methods=['POST'])
 def setLedColor():
